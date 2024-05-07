@@ -4,29 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1190b05f-f74f-4bd9-92e4-867914462598" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/CostOfPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/GraphLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/GraphNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/POI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Pixel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/other/utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hello-view.fxml" afterDir="false" />
+    <list default="true" id="1190b05f-f74f-4bd9-92e4-867914462598" name="Changes" comment="create project structure">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Connections" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Nodes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/CostOfPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/CostOfPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/GraphLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/GraphLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/GraphNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/POI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/POI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Pixel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Pixel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -61,13 +54,31 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jeffh\IdeaProjects\RouteFinderParis\src\main\resources" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.MainApplication" />
+      <module name="RouteFinderParis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -77,8 +88,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715095874971</updated>
-      <workItem from="1715095876244" duration="2777000" />
+      <workItem from="1715095876244" duration="10527000" />
     </task>
+    <task id="LOCAL-00001" summary="create project structure">
+      <created>1715102054242</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715102054242</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,10 +108,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="create project structure" />
   </component>
 </project>

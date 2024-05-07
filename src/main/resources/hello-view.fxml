@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelloController">
+   <children>
+      <AnchorPane fx:id="drawPane" layoutX="24.0" layoutY="150.0" prefHeight="500.0" prefWidth="750.0">
+         <children>
+            <ImageView fx:id="imageView1" fitHeight="500.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ParisMap.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="244.0" layoutY="33.0" prefHeight="72.0" prefWidth="311.0" text="Paris Route Finder System">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
