@@ -1,0 +1,87 @@
+/* General styling for the whole application */
+.root {
+    -fx-background-image: url("paris-surreal-dark-eiffel-tower-black-white-starlit-night-scene-eiffel-tower-black-and-white-photo-kathy-fornal.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: cover;
+}
+
+
+/* Styling for AnchorPane */
+.anchor-pane {
+    -fx-background-color: #1f1f1f;
+}
+
+/* Global label styling (default white text) */
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: normal;
+}
+
+/* Specific styling for view pane labels identified by fx:id */
+#drawPane-label{
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+
+/* Specific font sizes for different labels */
+.label[fx|id="Landmark Selection"] {
+    -fx-font-size: 20px;
+}
+
+.label[fx|id="Start"], .label[fx|id="End"] {
+    -fx-font-size: 16px;
+}
+
+/* ComboBox and ChoiceBox */
+.combo-box, .choice-box {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #ffffff;
+}
+
+/* ComboBox and ChoiceBox Popup list */
+.combo-box-popup, .choice-box-popup {
+    -fx-background-color: #3c3c3c;
+}
+
+.combo-box .list-cell, .choice-box .list-cell {
+    -fx-text-fill: #ffffff;  /* Text colour in drop-down list */
+    -fx-background-color: #5c5c5c;  /* Highlight on hover */
+
+}
+
+.combo-box .list-cell:hover, .choice-box .list-cell:hover {
+    -fx-background-color: #5c5c5c;  /* Highlight on hover */
+}
+
+
+/* Buttons */
+.button {
+    -fx-background-color: #4a4a4a;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 15px;        /* Rounded corners */
+    -fx-background-radius: 15px;    /* Rounded corners */
+    -fx-padding: 10px 20px;         /* Padding around the text */
+}
+
+.button:hover {
+    -fx-background-color: #5c5c5c;
+}
+
+.button:pressed {
+    -fx-background-color: #6d6d6d;
+}
+
+.button:focused {
+    -fx-background-color: #4a4a4a;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+}
+
+
+/* Lines */
+.line {
+    -fx-stroke: #ffffff;
+    -fx-stroke-width: 2;
+}

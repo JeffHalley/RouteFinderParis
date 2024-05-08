@@ -3,6 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelloController">
@@ -21,5 +22,74 @@
             <Font name="Arial Bold" size="22.0" />
          </font>
       </Label>
+      <Line endX="-88.0" endY="695.0" layoutX="879.0" layoutY="115.0" startX="-88.0" startY="-105.0" />
+      <Line endX="505.0" layoutX="892.0" layoutY="239.0" startX="-100.0" />
+      <VBox layoutX="791.0" prefHeight="235.0" prefWidth="216.0" />
+      <VBox alignment="CENTER" layoutX="936.0" layoutY="240.0" prefHeight="235.0" prefWidth="329.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="329.0" text="Landmark Selection">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="329.0" text="Start">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="startBox" maxWidth="329.0" prefWidth="150.0" promptText="start" />
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="329.0" text="End">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="endBox" maxWidth="329.0" prefWidth="150.0" promptText="end" />
+         </children>
+      </VBox>
+
+      <VBox layoutX="792.0" layoutY="475.0" prefHeight="72.0" prefWidth="606.0">
+         <children>
+            <Line endX="505.0" startX="-100.0" />
+            <Label alignment="CENTER" prefHeight="70.0" prefWidth="605.0" text="Algorithms selection">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="125.0" fitWidth="131.0" layoutX="20.0" layoutY="664.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@raccon-unscreen.gif" />
+         </image></ImageView>
+      <VBox layoutX="824.0" layoutY="550.0" prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <Button fx:id="dijkstrasButton" mnemonicParsing="false" onAction="#findPathDij" prefHeight="60.0" prefWidth="150.0" text="Dijkstras" />
+         </children>
+      </VBox>
+      <VBox layoutX="1026.0" layoutY="550.0" prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <Button fx:id="DFSButton" mnemonicParsing="false" onAction="#findDFSPath" prefHeight="60.0" prefWidth="150.0" text="Depth-First Search" />
+         </children>
+      </VBox>
+      <VBox layoutX="1227.0" layoutY="550.0" prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <Button fx:id="AllDFSButton" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#findAllDFSPaths" prefHeight="60.0" prefWidth="150.0" text="DFS All Routes" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="125.0" fitWidth="131.0" layoutX="424.0" layoutY="669.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kravatie-kravate.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="150.0" layoutX="568.0" layoutY="669.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@waterloo-lost.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="131.0" layoutX="154.0" layoutY="669.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@raccon-unscreen.gif" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

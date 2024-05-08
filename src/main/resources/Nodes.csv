@@ -1,29 +1,29 @@
-Eiffel Tower, 182, 161
-Champ de Mars, 204, 192
-Notre-Dame de Paris, 481, 208
-Jardin du Palais Royal, 419, 133
-Arc de Triomphe, 192, 43
-Catacombs of Paris, 397, 377
-Cimetière du Père-Lachaise, 715, 159
-St Felicity's Hospital, 155, 340
-Hospital Paris Saint-Joseph, 279, 410
-Node1, 350, 204
-Node2, 399, 313
-Node3, 100, 175
-Node4, 494, 155
-Node5, 387, 490
-Node6, 230, 104
-Node7, 172, 284
-Node8, 700, 250
-Node9, 621, 150
-Node10, 547, 465
-Node11, 260, 360
-Node12, 300, 300
-Node13, 500, 65
-Node14, 410, 264
-Node15, 100, 80
-Node16, 699, 468
-Node17, 584, 310
-Node18, 529, 249
-Node19, 400, 30
-Node20, 440, 418
+Eiffel Tower,182,161,true
+Champ de Mars,204,192,true
+Notre-Dame de Paris,481,208,true
+Jardin du Palais Royal,419,133,true
+Arc de Triomphe,192,43,true
+Catacombs of Paris,397,377,true
+Cimetière du Père-Lachaise,715,159,true
+St Felicity's Hospital,155,340,true
+Hospital Paris Saint-Joseph,279,410,true
+Node1,350,204,false
+Node2,399,313,false
+Node3,100,175,false
+Node4,494,155,false
+Node5,387,490,false
+Node6,230,104,false
+Node7,172,284,false
+Node8,700,250,false
+Node9,621,150,false
+Node10,547,465,false
+Node11,260,360,false
+Node12,300,300,false
+Node13,500,65,false
+Node14,410,264,false
+Node15,100,80,false
+Node16,699,468,false
+Node17,584,310,false
+Node18,529,249,false
+Node19,400,30,false
+Node20,440,418,false

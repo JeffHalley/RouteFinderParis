@@ -5,11 +5,13 @@ public class POI {
     private String name;
     private int xCoord;
     private int yCoord;
+    private boolean isLandmark;
 
-    public POI(String name, int xCoord, int yCoord) {
+    public POI(String name, int xCoord, int yCoord, Boolean isLandmark) {
         this.name = name;
         this.xCoord = xCoord;
         this.yCoord = yCoord;
+        this.isLandmark = isLandmark;
 
     }
 
@@ -46,6 +48,13 @@ public class POI {
         this.yCoord = yCoord;
     }
 
+    public boolean isLandmark() {
+        return isLandmark;
+    }
+
+    public void setLandmark(boolean landmark) {
+        isLandmark = landmark;
+    }
 
     @Override
     public String toString() {
@@ -53,6 +62,7 @@ public class POI {
                 "name='" + name + '\'' +
                 ", xCoord=" + xCoord +
                 ", yCoord=" + yCoord +
+                ", isLandmark=" + isLandmark +
                 '}';
     }
 }

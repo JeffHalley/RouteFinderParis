@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1190b05f-f74f-4bd9-92e4-867914462598" name="Changes" comment="create project structure">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Connections" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Nodes.csv" afterDir="false" />
+    <list default="true" id="1190b05f-f74f-4bd9-92e4-867914462598" name="Changes" comment="take classes from notes for future use, add javaFX imageview for displaying created sample nodes to connect landmark nodes, create two necessary csv files (csv parsers yet to be implemented)">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/CostOfPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/CostOfPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/GraphLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/GraphLink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/GraphNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/POI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/POI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Pixel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Pixel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Connections" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Nodes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Nodes.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -36,6 +36,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -45,21 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jeffh\IdeaProjects\RouteFinderParis\src\main\resources" />
@@ -88,7 +96,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715095874971</updated>
-      <workItem from="1715095876244" duration="10527000" />
+      <workItem from="1715095876244" duration="12599000" />
+      <workItem from="1715115730404" duration="17097000" />
+      <workItem from="1715133201695" duration="119000" />
+      <workItem from="1715136864704" duration="1518000" />
+      <workItem from="1715138393591" duration="344000" />
     </task>
     <task id="LOCAL-00001" summary="create project structure">
       <created>1715102054242</created>
@@ -97,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715102054242</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="take classes from notes for future use, add javaFX imageview for displaying created sample nodes to connect landmark nodes, create two necessary csv files (csv parsers yet to be implemented)">
+      <created>1715112273854</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715112273854</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +147,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project structure" />
+    <MESSAGE value="take classes from notes for future use, add javaFX imageview for displaying created sample nodes to connect landmark nodes, create two necessary csv files (csv parsers yet to be implemented)" />
+    <option name="LAST_COMMIT_MESSAGE" value="take classes from notes for future use, add javaFX imageview for displaying created sample nodes to connect landmark nodes, create two necessary csv files (csv parsers yet to be implemented)" />
   </component>
 </project>
