@@ -2,10 +2,7 @@ package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TreeItem;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
@@ -20,10 +17,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static javafx.scene.paint.Color.RED;
 
@@ -43,6 +37,8 @@ public class HelloController {
      Button DFSButton;
     @FXML
      Button ALLDFSButton;
+    @FXML
+     TreeView<String> DFSTreeView; // Assume this is already initialized in your FXML or somewhere in your code
 
     ////////////////////////////////////////////////////////////////////////
 
@@ -62,6 +58,9 @@ public class HelloController {
         return poisHashMap.get(names);
     }
 
+    private List<CostOfPath> allPaths = new ArrayList<>();
+
+
 
 
     public void initialize() {
@@ -73,8 +72,8 @@ public class HelloController {
         List<String> filteredLandmarkNames = updateLandmarkNames(names);
         startBox.getItems().addAll(names);
         endBox.getItems().addAll(names);
-
     }
+
 
 
     /**
@@ -212,20 +211,67 @@ public class HelloController {
 
 
 
+
+
     @FXML
     public void findAllDFSPaths(ActionEvent actionEvent) {
         GraphNode<POI> startNode = findGraphNode(startBox.getValue());
-        List<List<GraphNode<?>>> allPaths = Graph.findAllPathsDepthFirst(startNode, null, endBox.getValue());
-        if (allPaths != null) {
-            // Iterate through allPaths and draw each path
-            for (List<GraphNode<?>> path : allPaths) {
-                drawSinglePath(path, allDepthColor);
+        allPaths = Graph.findAllPathsDepthFirst2(startNode, new ArrayList<>(), 0, endBox.getValue());
+
+        TreeItem<String> rootItem = new TreeItem<>("All Paths");
+        rootItem.setExpanded(true);
+
+        if (allPaths != null && !allPaths.isEmpty()) {
+            for (CostOfPath costPath : allPaths) {
+                String pathLabel = "Path with Cost: " + costPath.pathCost;
+                TreeItem<String> pathItem = new TreeItem<>(pathLabel);
+                for (GraphNode<?> node : costPath.pathList) {
+                    TreeItem<String> nodeItem = new TreeItem<>(node.data.toString());
+                    pathItem.getChildren().add(nodeItem);
+                }
+                rootItem.getChildren().add(pathItem);
             }
+            DFSTreeView.setRoot(rootItem);
         } else {
-            // Handle the case where no paths are found
+            DFSTreeView.setRoot(new TreeItem<>("No paths found."));
             System.out.println("No paths found.");
         }
     }
+
+
+
+
+    @FXML
+    public void drawPathFromTreeViewSelection() {
+        TreeItem<String> selectedItem = DFSTreeView.getSelectionModel().getSelectedItem();
+
+        // Check if the selected item is actually meant to represent a path
+        if (selectedItem == null || selectedItem.getParent() == null || !selectedItem.getParent().getValue().equals("All Paths")) {
+            System.out.println("No valid path selected.");
+            return;
+        }
+
+        List<GraphNode<?>> pathNodes = new ArrayList<>();
+        String pathCostLabel = selectedItem.getValue();
+
+        boolean pathFound = false;
+        for (CostOfPath costPath : allPaths) {
+            String pathLabel = "Path with Cost: " + costPath.pathCost;
+            if (pathLabel.equals(pathCostLabel)) {
+                pathNodes.addAll(costPath.pathList);
+                pathFound = true;
+                break;
+            }
+        }
+
+        if (pathFound && !pathNodes.isEmpty()) {
+            drawSinglePath(pathNodes, depthColor);
+        } else {
+            System.out.println("Path data could not be found.");
+        }
+    }
+
+
 
 
 

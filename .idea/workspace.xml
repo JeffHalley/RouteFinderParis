@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1190b05f-f74f-4bd9-92e4-867914462598" name="Changes" comment="take classes from notes for future use, add javaFX imageview for displaying created sample nodes to connect landmark nodes, create two necessary csv files (csv parsers yet to be implemented)">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/style.css" afterDir="false" />
+    <list default="true" id="1190b05f-f74f-4bd9-92e4-867914462598" name="Changes" comment="add stylesheet for extra drip/clout. added algos and controller implementation. made changes to connection nodes as there was unconnected dead end nodes creating null pointer exceptions. added islandmark to point-of-interest class(necessary changes to csv to accommodate). finished graph class from notes(excess methods to be cut)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/POI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/POI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Connections" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Nodes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Nodes.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +96,10 @@
       <workItem from="1715133201695" duration="119000" />
       <workItem from="1715136864704" duration="1518000" />
       <workItem from="1715138393591" duration="344000" />
+      <workItem from="1715138812259" duration="304000" />
+      <workItem from="1715177923718" duration="432000" />
+      <workItem from="1715178986934" duration="3588000" />
+      <workItem from="1715212666045" duration="853000" />
     </task>
     <task id="LOCAL-00001" summary="create project structure">
       <created>1715102054242</created>
@@ -116,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715112273854</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add stylesheet for extra drip/clout. added algos and controller implementation. made changes to connection nodes as there was unconnected dead end nodes creating null pointer exceptions. added islandmark to point-of-interest class(necessary changes to csv to accommodate). finished graph class from notes(excess methods to be cut)">
+      <created>1715139049003</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715139049003</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +154,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project structure" />
     <MESSAGE value="take classes from notes for future use, add javaFX imageview for displaying created sample nodes to connect landmark nodes, create two necessary csv files (csv parsers yet to be implemented)" />
-    <option name="LAST_COMMIT_MESSAGE" value="take classes from notes for future use, add javaFX imageview for displaying created sample nodes to connect landmark nodes, create two necessary csv files (csv parsers yet to be implemented)" />
+    <MESSAGE value="add stylesheet for extra drip/clout. added algos and controller implementation. made changes to connection nodes as there was unconnected dead end nodes creating null pointer exceptions. added islandmark to point-of-interest class(necessary changes to csv to accommodate). finished graph class from notes(excess methods to be cut)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add stylesheet for extra drip/clout. added algos and controller implementation. made changes to connection nodes as there was unconnected dead end nodes creating null pointer exceptions. added islandmark to point-of-interest class(necessary changes to csv to accommodate). finished graph class from notes(excess methods to be cut)" />
   </component>
 </project>

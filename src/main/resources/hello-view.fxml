@@ -24,7 +24,13 @@
       </Label>
       <Line endX="-88.0" endY="695.0" layoutX="879.0" layoutY="115.0" startX="-88.0" startY="-105.0" />
       <Line endX="505.0" layoutX="892.0" layoutY="239.0" startX="-100.0" />
-      <VBox layoutX="791.0" prefHeight="235.0" prefWidth="216.0" />
+      <VBox layoutX="791.0" prefHeight="235.0" prefWidth="216.0">
+         <children>
+            <VBox alignment="CENTER" minHeight="235.0" minWidth="600.0" prefHeight="460.0" prefWidth="700.0">
+               <children>
+                  <TreeView fx:id="DFSTreeView" onMouseClicked="#drawPathFromTreeViewSelection" prefHeight="232.0" prefWidth="299.0" />
+               </children></VBox>
+         </children></VBox>
       <VBox alignment="CENTER" layoutX="936.0" layoutY="240.0" prefHeight="235.0" prefWidth="329.0">
          <children>
             <Label alignment="CENTER" prefHeight="67.0" prefWidth="329.0" text="Landmark Selection">
@@ -89,6 +95,11 @@
       <ImageView fitHeight="125.0" fitWidth="131.0" layoutX="154.0" layoutY="669.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@raccon-unscreen.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="125.0" layoutX="314.0" layoutY="652.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG_2585.jpg" />
          </image>
       </ImageView>
    </children>
