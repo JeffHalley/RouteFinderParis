@@ -13,11 +13,11 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Graph {
-    public static int getCost(int nodeA, int nodeB, List<GraphNode<POI>> roomNodes) {
-        int nodeAX = roomNodes.get(nodeA).data.getXCoord();
-        int nodeAY = roomNodes.get(nodeA).data.getYCoord();
-        int nodeBX = roomNodes.get(nodeB).data.getXCoord();
-        int nodeBY = roomNodes.get(nodeB).data.getYCoord();
+    public static int getCost(int nodeA, int nodeB, List<GraphNode<POI>> poiNodes) {
+        int nodeAX = poiNodes.get(nodeA).data.getXCoord();
+        int nodeAY = poiNodes.get(nodeA).data.getYCoord();
+        int nodeBX = poiNodes.get(nodeB).data.getXCoord();
+        int nodeBY = poiNodes.get(nodeB).data.getYCoord();
 
         return (int) Math.sqrt(nodeBX - nodeAX) * (nodeBX - nodeAX) + (nodeBY - nodeAY) * (nodeBY - nodeAY);
     }
@@ -52,7 +52,7 @@ public class Graph {
                             break; //We've identified the previous path node, so break the inner loop to continue
                     }
                 }
-//Reset the node values for all nodes to (effectively) infinity so we can search again (leave no footprint!)
+//Reset the node values for all nodes to (effectively) infinity, so we can search again (leave no footprint!)
                 for (GraphNode<?> n : encountered) n.nodeValue = Integer.MAX_VALUE;
                 for (GraphNode<?> n : unencountered) n.nodeValue = Integer.MAX_VALUE;
                 return cp; //The costed (cheapest) path has been assembled, so return it!
