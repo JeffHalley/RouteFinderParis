@@ -92,10 +92,10 @@ public class HelloController {
                 String name = parts[0].trim();
                 int x = Integer.parseInt(parts[1].trim());
                 int y = Integer.parseInt(parts[2].trim());
-                boolean isAccessible = Boolean.parseBoolean(parts[3].trim());
+                boolean isLandmark = Boolean.parseBoolean(parts[3].trim());
 
                 // Create and store POI object
-                POI newPoi = new POI(name, x, y, isAccessible);
+                POI newPoi = new POI(name, x, y, isLandmark);
                 GraphNode<POI> node = new GraphNode<>(newPoi);
                 poiNodes.add(node);
                 poisHashMap.put(name, node);
@@ -103,7 +103,7 @@ public class HelloController {
                 pois.add(newPoi);
 
                 // Create a small circle for the node's location
-                Circle circle = new Circle(x, y, 5, isAccessible ? Color.GREEN : Color.RED);
+                Circle circle = new Circle(x, y, 5, isLandmark ? Color.GREEN : Color.RED);
 
                 // Create a label to display the node's name
                 Label label = new Label(name);
