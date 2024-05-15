@@ -14,6 +14,6 @@ This project is a JavaFX application designed to find routes between landmarks i
 - [] **Waypoint Support:** Add support for specifying intermediate waypoints between the starting and destination points (not supported in BFS).
 - [] **Avoid Specified Points/Landmarks:** Allow users to mark points to avoid in routes (not supported in BFS).
 - [] **JUnit Testing:** Perform unit testing using JUnit for key components.
-- [] **JMH Benchmarking:** Implement JMH benchmarking for critical methods.
+- [] **JMH benchmarking:** Implement JMH benchmarking for critical methods.
 
 
